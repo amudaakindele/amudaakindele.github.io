@@ -1,0 +1,36 @@
+/* Site-specific additions on top of the theme (main.css). */
+
+/* News dates: muted, fixed width so entries line up */
+.news-date {
+  display: inline-block;
+  min-width: 5.2em;
+  margin-right: 0.35em;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--global-text-color-light, #9ea3ab);
+}
+
+/* Footer: keep it in normal page flow on every screen size */
+.page__footer {
+  position: relative !important;
+  bottom: auto !important;
+  margin-top: 3em;
+}
+.page__footer-copyright {
+  font-size: 0.75em;
+  padding-top: 1em;
+  color: var(--global-text-color-light, #9ea3ab);
+}
+
+/* Comfortable spacing between list entries (news, publications, certificates) */
+.page__content li,
+.archive li {
+  margin-bottom: 0.35em;
+}
+
+/* Visible keyboard focus for accessibility */
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--global-base-color, #2f7f93);
+  outline-offset: 2px;
+}
