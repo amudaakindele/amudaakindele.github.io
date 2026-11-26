@@ -34,3 +34,10 @@ button:focus-visible {
   outline: 2px solid var(--global-base-color, #2f7f93);
   outline-offset: 2px;
 }
+
+/* Homepage research tagline */
+.tagline {
+  font-size: 1.1em;
+  color: var(--global-base-color, #2f7f93);
+  margin-bottom: 1em;
+}
